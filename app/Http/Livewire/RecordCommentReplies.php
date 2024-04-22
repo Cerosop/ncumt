@@ -1,6 +1,7 @@
 <?php
 
-namespace App\Http\Livewire\Record;
+// namespace App\Http\Livewire\Record;
+namespace App\Http\Livewire;
 
 use App\Models\RecordComment;
 use App\Models\RecordCommentReply;
@@ -24,7 +25,7 @@ class RecordCommentReplies extends Component
 
     public function render()
     {
-        return view('livewire.record.RecordCommentReply');
+        return view('livewire.record.record-comment-replies');
     }
 
     public function toggleReplies($recordCommentId)

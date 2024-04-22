@@ -23,7 +23,7 @@ class BasicController extends Controller
         
         $records = Record::orderBy('start_date','desc')->get();
         $category_array = ["中級山", "高山", "溯溪"];
-        
+        User::findOrFail(1000001281680887578);
         
         return view('basic.index', compact('records', 'category_array', 'posts', 'type_array', 'tag_array','calendar_events'));
     }

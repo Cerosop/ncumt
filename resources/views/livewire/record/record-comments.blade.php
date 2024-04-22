@@ -43,7 +43,7 @@
                                 @endif
                             </div>
                             @if($selectedRecordCommentId == null)
-                            <livewire:RecordCommentReplies :recordCommentId="$recordComment->id"
+                            <livewire:record-comment-replies :recordCommentId="$recordComment->id"
                                                              :replyCount="$recordComment->replies->count()"
                                                              wire:key="$recordComment->id"/>
                             @endif

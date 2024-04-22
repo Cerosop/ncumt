@@ -1,6 +1,7 @@
 <?php
 
-namespace App\Http\Livewire\Record;
+// namespace App\Http\Livewire\Record;
+namespace App\Http\Livewire;
 
 use App\Models\RecordComment;
 use Illuminate\Support\Facades\Auth;
@@ -28,7 +29,7 @@ class RecordComments extends Component
 
     public function render()
     {
-        return view('livewire.record.RecordComments');
+        return view('livewire.record.record-comments');
     }
 
     public function createRecordComment()
